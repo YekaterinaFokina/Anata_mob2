@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="./css/style_win.css">
     <link rel="stylesheet" href="./css/style_main.css">
 </head>
 <body>
     <script>
+        function OpenCallWindow() {
+                document.getElementById("window_call").style.display = "block";
+        }
+        function closeWindow_call() {
+                document.getElementById("window_call").style.display = "none";
+        }
+        function OpenProjectWindow() {
+                document.getElementById("win_project").style.display = "block";
+        }
+        function closeWindow_Project() {
+                document.getElementById("win_project").style.display = "none";
+        }
         function more_video() {
             window.open("index_video.html",`_self`);
         }
@@ -18,6 +31,103 @@
             window.open("index_kitchens.html",`_self`);
         }
     </script>
+
+<div class="window_project" id="win_project">
+    <div class="cont_window_project">
+        <div class="cont_img_win_pj">
+            <img src="./icon.png" class="img_win_pj" alt="">
+        </div>
+        <div class="cont_main_text_win_pj">
+            <p>Проект + Расчет</p>
+            <div class="btn_close_win_pj">
+                <button  onclick="closeWindow_Project()">
+                    <img src="./img/close.png" alt="">
+                </button>
+            </div>
+            
+        </div>
+        <div class="cont_input1_win_pj">
+            <div class="input1_text_win_pj">
+                <p>Представтесь</p>
+                <div class="input_pj">
+                    <input type="text" placeholder="Введите свое имя">
+                    <hr width="" size="1px" color="#878B90">
+                </div>
+            </div>
+        </div>
+
+        <div class="cont_input2_win_pj">
+            <div class="input2_text_win_pj">
+                <p>Телефон</p>
+                <div class="input2_call_pj">
+                    <input type="text" placeholder="+7 (000) 000-00-00">
+                    <hr width="" size="1px" color="#878B90">
+                </div>
+            </div>
+        </div>
+
+        <div class="cont_input3_win_pj">
+            <div class="input3_text_win_pj">
+                <p>Фото</p>
+                <div class="input3_pj">
+                    <input type="file" placeholder="">
+                </div>
+            </div>
+        </div>
+
+        <div class="button_window_win_pj">
+            <button class="btn_window">Рассчитать</button>
+        </div>
+
+        
+    </div>
+
+</div>
+
+
+<div class="window_call" id="window_call">
+    <div class="cont_window_call">
+        <div class="cont_img_win_1">
+            <img src="./Group.png" class="img_win_1" alt="">
+        </div>
+        <div class="cont_main_text_win_1">
+            <p>Вызвать замерщика <br>с образцами</p>
+            <div class="btn_close_win_1">
+                <button  onclick="closeWindow_call()">
+                    <img src="./img/close.png" alt="">
+                </button>
+            </div>
+            
+        </div>
+        <div class="cont_input1_win_1">
+            <div class="input1_text_win_1">
+                <p>Представтесь</p>
+                <div class="input_call">
+                    <input type="text" placeholder="Введите свое имя">
+                    <hr width="" size="1px" color="#878B90">
+                </div>
+            </div>
+        </div>
+
+        <div class="cont_input2_win_1">
+            <div class="input2_text_win_1">
+                <p>Телефон</p>
+                <div class="input2_call">
+                    <input type="text" placeholder="+7 (000) 000-00-00">
+                    <hr width="" size="1px" color="#878B90">
+                </div>
+            </div>
+        </div>
+
+        <div class="button_window_win_1">
+            <button class="btn_window">Вызвать</button>
+        </div>
+
+        
+    </div>
+
+</div>
+
     <div class="header">
         <div class="header_main">
             <div class="cont_header_1">
@@ -45,10 +155,10 @@
             <div class="cont_header_2">
                 <div class="head_2_buttons">
                     <div class="head_2_btn_1">
-                        <button class="btn1_head2">Проект + Расчет</button>
+                        <button onclick="OpenProjectWindow()" class="btn1_head2">Проект + Расчет</button>
                     </div>
                     <div class="head_2_btn_2">
-                        <button class="btn2_head2">Замерщик</button>
+                        <button onclick="OpenCallWindow()" class="btn2_head2">Замерщик</button>
                     </div>
                     
 
