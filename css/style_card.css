@@ -129,6 +129,10 @@ body{
 .slider img {
     object-fit: cover;
 }
+.b_img{
+    width: 360px;
+    height: 240px;
+}
 .slider_btn{
     top: 100px;
     display: flex;
@@ -333,6 +337,8 @@ body{
     transition: 1s;
 }
 .video {
+    width: 320px;
+    height: 202px;
     cursor: pointer;
     transition: 1s;
 }
@@ -416,6 +422,7 @@ body{
 }
 .cont_feed_1{
     margin-top: 40px;
+    
 }
 .stars_text{
     font-family: "mont";
@@ -448,6 +455,11 @@ body{
     margin-left: 30px;
     transition: 1s;
     overflow: scroll;
+    overflow: auto;
+}
+.fb_card{
+    width: 98px;
+    height: 65px;
 }
 .cont_img_feed img:hover{
     margin-left: 10px;

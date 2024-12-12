@@ -226,6 +226,10 @@ body{
     box-shadow: 0px 0px 20px 0px rgba(51, 52, 52, 0.2); 
 
 }
+.img_kitch{
+    width: 320px;
+    height: 202px;
+}
 .text_card{
     width: 320px;
     height: 151px;

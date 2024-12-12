@@ -238,6 +238,10 @@ body{
     line-height: 21px;
     color: #000000;
 }
+.V_card{
+    width: 320px;
+    height: 202px;
+}
 .txt_card2{
     margin: auto;
     width: 272px;

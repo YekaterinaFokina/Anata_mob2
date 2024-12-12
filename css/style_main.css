@@ -310,6 +310,12 @@ body{
     color: #000000;
 }
 
+.img_main_card {
+    width: 320px;
+    height: 202px;
+}
+
+
 .text_card2{
     display: flex;
     justify-content: space-between;

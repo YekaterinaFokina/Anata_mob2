@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="./css/style_win.css">
     <link rel="stylesheet" href="./css/style_kitchens.css">
 </head>
 <body>
+
+    <script>
+         function OpenCallWindow() {
+                document.getElementById("window_call").style.display = "block";
+        }
+        function closeWindow_call() {
+                document.getElementById("window_call").style.display = "none";
+        }
+        function OpenProjectWindow() {
+                document.getElementById("win_project").style.display = "block";
+        }
+        function closeWindow_Project() {
+                document.getElementById("win_project").style.display = "none";
+        }
+        function more_video() {
+            window.open("index_video.html",`_self`);
+        }
+        function more_card() {
+            window.open("index_card.html",`_self`);
+        }
+        function more_kitchen() {
+            window.open("index_kitchens.html",`_self`);
+        }
+
+        function Kitchen_Card_1(){
+            window.open("index_card.html",`_self`);
+       }
+    
+         function Kitchen_Card_2(){
+            window.open("index_card2.html",`_self`);
+       }
+       
+       function Kitchen_Card_3(){
+            window.open("index_card3.html",`_self`);
+       }
+    
+    function Kitchen_Card_4(){
+            window.open("index_card4.html",`_self`);
+       }
+       function More_kitchens(){
+            window.open("index_kitchens.html",`_self`);
+       }
+    
+    </script>
+    
     <div class="header">
         <div class="header_main">
             <div class="cont_header_1">
@@ -76,7 +122,7 @@
 
             <div class="cont_cards">
                 <div class="card">
-                    <img src="./img/main/image 7.png" alt="">
+                    <img class="img_kitch" src="./img_for_cards/3_Azanova_Dinara_1490kh860.jpg.jpg" alt="">
                     <div class="text_card">
                         <div class="text_card1">
                         <p>Кухня Teramo</p>
@@ -105,14 +151,14 @@
                                 </div>
                             </div>
                             <div class="btn_card">
-                                <button>Рассчитать эту кухню</button>
+                                <button onclick="Kitchen_Card_1()">Рассчитать эту кухню</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card_2">
-                    <img src="./img/main/img2.png" alt="">
+                    <img class="img_kitch" src="./img_for_cards/1.webp" alt="">
                     <div class="text_card">
                         <div class="text_card1">
                         <p>Кухня Intermo</p>
@@ -141,14 +187,14 @@
                                 </div>
                             </div>
                             <div class="btn_card">
-                                <button>Рассчитать эту кухню</button>
+                                <button onclick="Kitchen_Card_2()" >Рассчитать эту кухню</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card_2">
-                    <img src="./img/main//photo.png" alt="">
+                    <img class="img_kitch" src="./img_for_cards/31.webp" alt="">
                     <div class="text_card">
                         <div class="text_card1">
                         <p>Кухня Integrato</p>
@@ -177,14 +223,14 @@
                                 </div>
                             </div>
                             <div class="btn_card">
-                                <button>Рассчитать эту кухню</button>
+                                <button onclick="Kitchen_Card_3()">Рассчитать эту кухню</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="card_2">
-                    <img src="./img/main/img4.png" alt="">
+                    <img class="img_kitch" src="./img_for_cards/41.webp" alt="">
                     <div class="text_card">
                         <div class="text_card1">
                         <p>Кухня Grato</p>
@@ -213,7 +259,7 @@
                                 </div>
                             </div>
                             <div class="btn_card">
-                                <button>Рассчитать эту кухню</button>
+                                <button onclick="Kitchen_Card_4()">Рассчитать эту кухню</button>
                             </div>
                         </div>
                     </div>
